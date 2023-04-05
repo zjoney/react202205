@@ -1,5 +1,6 @@
 import { ADD1, MINUS1 } from '../action-types';
 function add1() {//actionCreator 它是一个创建action的函数
+ 
   return { type: ADD1 };
 }
 function minus1() {//actionCreator 它是一个创建action的函数
@@ -8,10 +9,10 @@ function minus1() {//actionCreator 它是一个创建action的函数
 function thunkAdd() {
   return function (getState, dispatch) {
     setTimeout(() => {
-      debugger
+     
       dispatch(function (getState, dispatch) {
         setTimeout(() => {
-          debugger
+       
           dispatch({ type: ADD1 });
         }, 1000);
       });

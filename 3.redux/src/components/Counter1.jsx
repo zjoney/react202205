@@ -1,6 +1,6 @@
 import React from 'react';
 import actionCreators from '../store/actionCreators/counter1';
-import { connect } from '../react-redux';
+import { connect } from '../react-redux1';
 class Counter1 extends React.Component {
   render() {
     return (
